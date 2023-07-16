@@ -15,7 +15,22 @@
   height: 500px;
   object-fit: cover;
 
+/* } */
+
+/* .img { */
+  object-fit: contain;
+  animation: move 3s infinite ease alternate;
 }
+
+@keyframes move {
+  from {
+      transform: translateY(-10px);
+  }
+  to {
+      transform: translateY(10px);
+  }
+}
+
 .title{
   font-size: 32px;
   width: 800px;
@@ -36,7 +51,7 @@
   border: none;
   border-radius: 5px;
   width: max-content;
-  color: white;
+  color: white ;
   font-size: 20px;
   font-weight: 100px;
 }

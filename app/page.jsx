@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import Hero from "public/hero1_ladies_farm.jpg";
+import Hero from "public/plant-give.jpg";
+import Button from "@/components/button/Button";
 
 export default function Home() {
     return (
@@ -13,13 +14,7 @@ export default function Home() {
                         Let us make the Earth go Green, again!
                     </p>
 
-                    <div>
-                        <button className={styles.button_class}>
-                            How to Trade
-                        </button>
-                        
-                    
-                    </div>
+                    <Button url="/trade" text="How to Trade"></Button>
                 </div>
             </div>
             <div className={styles.item}>

@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <div className='container'>
         <Navbar />
-        <h2>Global Cabron Credit Trading Exchange</h2>
+        <h1>Global Cabron Credit Exchange</h1>
         {children}
         <Footer />
 
