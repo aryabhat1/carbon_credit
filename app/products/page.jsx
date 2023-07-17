@@ -1,12 +1,30 @@
-import React from 'react'
-import styles from './page.module.css';
-import Link from 'next/link';
-
+import React from "react";
+import styles from "./page.module.css";
+import Link from "next/link";
 
 const Products = () => {
-  return (
-    <div>My Products</div>
-  )
-}
+    return (
+        <div className={styles.container}>
+            <h1 className={styles.selectTitle}>Choose a Gallery</h1>
+            <div className={styles.items}>
+                <Link href="/products/illustrations" className={styles.item}>
+                    <span className={styles.title}>Trading</span>
+                </Link>
 
-export default Products
+                <Link href="/products/illustrations" className={styles.item}>
+                    <span className={styles.title}>Training</span>
+                </Link>
+
+                <Link href="/products/illustrations" className={styles.item}>
+                    <span className={styles.title}>Global Events</span>
+                </Link>
+
+                <Link href="/products/illustrations" className={styles.item}>
+                    <span className={styles.title}>Consultancy</span>
+                </Link>
+            </div>
+        </div>
+    );
+};
+
+export default Products;

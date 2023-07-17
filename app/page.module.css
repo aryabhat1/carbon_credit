@@ -32,7 +32,7 @@
 }
 
 .title{
-  font-size: 32px;
+  font-size: 40px;
   width: 800px;
   background: linear-gradient(to bottom, #194c33, #bbb);
   -webkit-background-clip: text;
@@ -43,7 +43,7 @@
   font-weight: 300;
   /* padding: 10px; */
 }
-.button_class{
+/* .button_class{
   margin-top: 15px;
   padding: 20px;
   cursor: pointer;
@@ -51,7 +51,7 @@
   border: none;
   border-radius: 5px;
   width: max-content;
-  color: white ;
+  color: black;
   font-size: 20px;
   font-weight: 100px;
-}
+} */
