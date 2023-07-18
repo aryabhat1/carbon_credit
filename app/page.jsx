@@ -13,7 +13,7 @@ export default function Home() {
                         Let us make the Earth go Green, again!
                     </p>
 
-                    <Button url="/trade" text="How to Trade"></Button>
+                    <Button url="/trade" text="Start Trading"></Button>
 
                 
             </div>
