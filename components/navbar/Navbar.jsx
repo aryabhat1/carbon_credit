@@ -2,8 +2,9 @@
 
 import Link from "next/link";
 import React from "react";
-import styles from './navbar.module.css';
+import styles from "./navbar.module.css";
 import DarkModeToggle from "../darkModeToggle/DarkModeToggle";
+import { signOut, useSession } from "next-auth/react";
 
 const links = [
     {
@@ -12,21 +13,31 @@ const links = [
         url: "/",
     },
 
+    // {
+    //     id: 2,
+    //     title: "Portfolio",
+    //     url: "/portfolio",
+    // },
+
+    // {
+    //     id: 3,
+    //     title: "Blog",
+    //     url: "/blog",
+    // },
     {
         id: 2,
-        title: "Portfolio",
-        url: "/portfolio",
+        title: "About",
+        url: "/about",
     },
-
     {
         id: 3,
-        title: "Blog",
-        url: "/blog",
+        title: "Products",
+        url: "/products",
     },
     {
         id: 4,
-        title: "About",
-        url: "/about",
+        title: "Policy",
+        url: "/policy",
     },
     {
         id: 5,
@@ -35,22 +46,14 @@ const links = [
     },
     {
         id: 6,
-        title: "Products",
-        url: "/products",
-    },
-    {
-        id: 7,
-        title: "Policy",
-        url: "/policy",
-    },
-    {
-        id: 8,
         title: "Dashboard",
         url: "/dashboard",
     },
 ];
 
 const Navbar = () => {
+    const session = useSession();
+
     return (
         <div className={styles.container}>
             <Link href="/" className={styles.logo}>
@@ -63,13 +66,14 @@ const Navbar = () => {
                         {link.title}
                     </Link>
                 ))}
-                <button className={styles.logout}
-                    onClick={() => {
-                        console.log("logged out");
-                    }}
-                >
-                    Logout
-                </button>
+
+                {session.status === "authenticated" && (
+
+                
+                    <button className={styles.logout} onClick={signOut}>
+                        SignOut
+                    </button>
+                )}
             </div>
         </div>
     );
