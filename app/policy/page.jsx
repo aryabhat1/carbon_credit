@@ -1,3 +1,5 @@
+
+/*
 import React from "react";
 import styles from "./page.module.css";
 import Link from "next/link";
@@ -39,9 +41,11 @@ const Policy = async () => {
                     <div className={styles.content}>
                         <h1 className={styles.title}>{item.title}</h1>
                         <p className={styles.desc}>{item.desc}</p>
-                        {/* <p className={styles.name}>{item.username}</p>
-                        <p className={styles.content}>{item.content}</p> */}
-                    </div>
+                        /* <p className={styles.name}>{item.username}</p>
+                        <p className={styles.content}>{item.content}</p> */
+  
+ /*
+                        </div>
                 </Link>
             ))}
         </div>
@@ -49,3 +53,4 @@ const Policy = async () => {
 };
 
 export default Policy;
+*/
