@@ -8,14 +8,16 @@ export default function Home() {
         <div className={styles.container}>
             <div className={styles.item}>
                 <h1 className={styles.title}>
-                    Trade your carbon credit on a Global Exchange. </h1>
-                    <p className={styles.desc}>
-                        Let us make the Earth go Green, again!
-                    </p>
+                    Trade your carbon credit on a Global Exchange.{" "}
+                </h1>
+                <p className={styles.desc}>
+                    Let us make the Earth go Green, again!
+                </p>
 
-                    <Button url="/trade" text="Start Trading"></Button>
-
-                
+                <Button
+                    url="https://cc-exchange.vercel.app/"
+                    text="Start Trading"
+                ></Button>
             </div>
             <div className={styles.item}>
                 <Image
