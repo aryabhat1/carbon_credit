@@ -34,18 +34,18 @@ const links = [
         title: "Products",
         url: "/products",
     },
+    // {
+    //     id: 4,
+    //     title: "Policy",
+    //     url: "/policy",
+    // },
     {
         id: 4,
-        title: "Policy",
-        url: "/policy",
-    },
-    {
-        id: 5,
         title: "Contact",
         url: "/contact",
     },
     {
-        id: 6,
+        id: 5,
         title: "Dashboard",
         url: "/dashboard",
     },
@@ -68,8 +68,6 @@ const Navbar = () => {
                 ))}
 
                 {session.status === "authenticated" && (
-
-                
                     <button className={styles.logout} onClick={signOut}>
                         SignOut
                     </button>
