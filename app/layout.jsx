@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
                     <AuthProvider>
                         <div className="container">
                             <Navbar />
-                            <h1>Global Cabron Credit Exchange</h1>
+                            <h1>Global Carbon Credit Exchange</h1>
                             {children}
                             <Footer />
                         </div>
